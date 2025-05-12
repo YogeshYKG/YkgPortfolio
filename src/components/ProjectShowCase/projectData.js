@@ -12,14 +12,94 @@ const projectData = [
   {
     id: 2,
     title: "NIC Diner Web",
-    iframeUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
+    iframeUrl: "/images/Works/NIC.gif",
     iframeView: "LargeScreen",
     description: "Full-stack restaurant web app...",
     tags: ["PHP", "MySQL", "Bootstrap"],
     thumbnail: "/images/Works/NIC.gif",
     projectLink: "#",
   },
-  // ...
+  {
+    id: 3,
+    title: "Social Media Dashboard",
+    iframeUrl: "https://social-media-six-gray.vercel.app/",
+    iframeView: "None",
+    description: "A React JS social media dashboard application with user interaction features",
+    tags: ["React", "JavaScript", "Social Media", "Dashboard", "User Interface"],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/social-media",
+  },
+  {
+    id: 4,
+    title: "WeatherApp",
+    iframeUrl: "https://weather-app-ruddy-two-48.vercel.app/",
+    iframeView: "None",
+    description: "A Vite React JS application that fetches and displays real-time weather data using the OpenWeatherMap API",
+    tags: ["Vite", "React", "JavaScript", "WeatherApp", "OpenWeatherMap API", "API Integration", "Real-time Data"],
+    thumbnail: "/images/MyAppItem/WeatherApp.png",
+    projectLink: "https://github.com/YogeshYKG/WeatherApp",
+  },
+  {
+    id: 5,
+    title: "Random Quote Generator",
+    iframeUrl: "https://quote-generator-ecru-xi.vercel.app/",
+    iframeView: "None",
+    description: "A Vite React JS application that fetches random quotes via API and displays them with a typewriter animation effect",
+    tags: ["Typewriter Effect", "Random Quote", "React", "API Fetch", "Tailwind CSS", "JavaScript", "Quote Generator"],
+    thumbnail: "/images/MyAppItem/quote-generator.png",
+    projectLink: "#",
+  },
+  {
+    id: 6,
+    title: "Food Ordering App",
+    iframeUrl: "https://react-food-app-pz1u.vercel.app/",
+    iframeView: "None",
+    description: "A React-based food ordering application with menu display and ordering functionality",
+    tags: ["React", "JavaScript", "Food Ordering", "E-commerce", "UI/UX"],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/React-Food-App",
+  },
+  {
+    id: 7,
+    title: "Dynamic Clock",
+    iframeUrl: "https://react-dynamic-clock.vercel.app/",
+    iframeView: "None",
+    description: "A React JS application displaying a real-time dynamic clock",
+    tags: ["React", "JavaScript", "Dynamic Clock", "Real-time", "Time Display"],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/React-dynamic-clock",
+  },
+  {
+    id: 8,
+    title: "StopWatch",
+    iframeUrl: "https://stopwatch-lac-nu.vercel.app/",
+    iframeView: "None",
+    description: "A Vite React JS application featuring a stopwatch with start, stop, and reset functionalities",
+    tags: ["Vite", "React", "JavaScript", "Tailwind CSS", "StopWatch", "Timer"],
+    thumbnail: "/images/MyAppItem/StopWatch.png",
+    projectLink: "#",
+  },
+  {
+    id: 9,
+    title: "Calculator",
+    iframeUrl: "https://react-calculator-app-six.vercel.app/",
+    iframeView: "None",
+    description: "A React JS calculator application with basic arithmetic operations",
+    tags: ["React", "JavaScript", "Calculator", "Math Operations", "Functional Components"],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/React-Calculator-App",
+  },
+  {
+    id: 10,
+    title: "PasteApp",
+    iframeUrl: "https://paste-app-gilt-two.vercel.app",
+    iframeView: "None",
+    description: "A Vite React JS application for creating and managing text snippets",
+    tags: ["Vite", "React", "JavaScript", "PasteApp", "Text Management"],
+    thumbnail: "/images/MyAppItem/PasteApp.png",
+    projectLink: "#",
+  },
 ];
+
 
 export default projectData;

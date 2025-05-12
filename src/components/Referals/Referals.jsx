@@ -6,6 +6,7 @@
 /** Components */
 import ReferalCard from "./ReferalCard";
 import "../../index.css";
+import "../../global.css"
 const referals = [
   {
     referalContent:
