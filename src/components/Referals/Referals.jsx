@@ -4,9 +4,9 @@
  */
 
 /** Components */
+import ScrollReveal from "../ScrollReveal";
 import ReferalCard from "./ReferalCard";
-import "../../index.css";
-import "../../global.css"
+
 const referals = [
   {
     referalContent:
@@ -94,8 +94,10 @@ const Referals = () => {
       <div className="lineSeparator" />
       <section id="reviews" className="section">
         <div className="container">
-          <h2 className="headline-2 mb-8 reveal-up">Referrals</h2>
-
+          <ScrollReveal>
+            <h2 className="headline-2 mb-8">Referrals</h2>
+          </ScrollReveal>
+          <ScrollReveal>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mb-16">
             {referals.map(
               (
@@ -111,7 +113,6 @@ const Referals = () => {
                 key
               ) => (
                 <ReferalCard
-                  key={key}
                   name={name}
                   imgSrc={imgSrc}
                   company={company}
@@ -123,6 +124,7 @@ const Referals = () => {
               )
             )}
           </div>
+          </ScrollReveal>
         </div>
       </section>
     </>

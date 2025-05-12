@@ -8,6 +8,7 @@
  * Node Modules
  */
 import { useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Navbar = ({navOpen}) => {
@@ -38,38 +39,33 @@ const Navbar = ({navOpen}) => {
     const navItems = [
         {
           label: 'Home',
-          link: '#home',
+          link: '/home',
           className: 'nav-link active',
           ref: lastActiveLink
         },
         {
-          label: 'About',
-          link: '#about',
-          className: 'nav-link'
-        },
-        {
           label: 'Skills',
-          link: '#Skills',
+          link: '/Skills',
           className: 'nav-link'
         },
         {
-          label: 'MyApps',
-          link: '#MyApps',
+          label: 'Works',
+          link: '/Projects',
           className: 'nav-link'
         },
         {
-          label: 'Work',
-          link: '#work',
+          label: 'Portfolio',
+          link: '/Portfolio',
           className: 'nav-link'
         },
         {
-          label: 'Reviews',
-          link: '#reviews',
+          label: 'Referals',
+          link: '/Referals',
           className: 'nav-link'
         },
         {
           label: 'Contact',
-          link: '#contact',
+          link: '/Contact',
           className: 'nav-link md:hidden'
         }
       ];
@@ -77,15 +73,15 @@ const Navbar = ({navOpen}) => {
     <nav className={'navbar ' + (navOpen?'active':'')}>
         {
             navItems.map(({ label, link, className, ref}, key) => (
-                <a 
-                    href={link}
+                <Link 
+                    to={link}
                     key={key}
                     ref={ref} 
                     className={className}
                     onClick={activeCurrentLink}
                 >
                     {label}
-                </a>
+                </Link>
             ))
         }
         <div 

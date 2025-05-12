@@ -3,12 +3,10 @@
  * @license Apache-2.0
  */
 
-/**
- * Components
- */
 import { Github, Linkedin, Twitter, Codepen, Code2 } from "lucide-react";
 import { ButtonPrimary } from "../Button";
 import FooterCopyright from "./FooterCopyright";
+import ScrollReveal from "../ScrollReveal";
 
 const sitemap = [
   { label: "Home", href: "#home" },
@@ -57,67 +55,80 @@ const Footer = () => {
           <div className="lg:grid grid-cols-2 items-start">
             {/* Left Section */}
             <div className="mb-10">
-              <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-                Let&apos;s work together today!
-              </h2>
-              <ButtonPrimary
-                href="mailto:guptayogesh484.00@gmail.com"
-                label="Start Project"
-                icon="chevron_right"
-                classes="reveal-up"
-              />
+              <ScrollReveal>
+                <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
+                  Let&apos;s work together today!
+                </h2>
+              </ScrollReveal>
+
+              <ScrollReveal>
+                <ButtonPrimary
+                  href="mailto:guptayogesh484.00@gmail.com"
+                  label="Start Project"
+                  icon="chevron_right"
+                />
+              </ScrollReveal>
             </div>
 
             {/* Sitemap & Socials */}
             <div className="lg:pl-20">
               {/* Sitemap */}
               <div className="mb-8">
-                <p className="font-semibold text-zinc-300 mb-3 reveal-up">
-                  Sitemap
-                </p>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 reveal-up">
-                  {sitemap.slice(0, 4).map(({ label, href }, key) => (
-                    <a
-                      key={key}
-                      href={href}
-                      className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3 reveal-up">
-                  {sitemap.slice(4).map(({ label, href }, key) => (
-                    <a
-                      key={key}
-                      href={href}
-                      className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </div>
+                <ScrollReveal>
+                  <p className="font-semibold text-zinc-300 mb-3">Sitemap</p>
+                </ScrollReveal>
+
+                <ScrollReveal>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    {sitemap.slice(0, 4).map(({ label, href }, key) => (
+                      <a
+                        key={key}
+                        href={href}
+                        className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                  </div>
+                </ScrollReveal>
+
+                <ScrollReveal>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3">
+                    {sitemap.slice(4).map(({ label, href }, key) => (
+                      <a
+                        key={key}
+                        href={href}
+                        className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                  </div>
+                </ScrollReveal>
               </div>
 
               {/* Socials */}
               <div>
-                <p className="font-semibold text-zinc-300 mb-3 reveal-up">
-                  Socials
-                </p>
-                <div className="flex flex-wrap gap-4 reveal-up">
-                  {socials.map(({ label, href, icon }, key) => (
-                    <a
-                      key={key}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
-                    >
-                      {icon}
-                      {label}
-                    </a>
-                  ))}
-                </div>
+                <ScrollReveal>
+                  <p className="font-semibold text-zinc-300 mb-3">Socials</p>
+                </ScrollReveal>
+
+                <ScrollReveal>
+                  <div className="flex flex-wrap gap-4">
+                    {socials.map(({ label, href, icon }, key) => (
+                      <a
+                        key={key}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
+                      >
+                        {icon}
+                        {label}
+                      </a>
+                    ))}
+                  </div>
+                </ScrollReveal>
               </div>
             </div>
           </div>

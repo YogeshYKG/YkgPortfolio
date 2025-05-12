@@ -28,6 +28,7 @@ const Hero = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  
   return (
     <section id="home" className="pt-28 lg:pt-16">
       <div className="cointainer py-12 items-center lg:grid lg:grid-cols-2 lg:gap-10">

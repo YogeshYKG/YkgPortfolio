@@ -4,6 +4,11 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.reveal-up.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .lineSeparator {
   height: 1px;
   background-color: #e5e7eb; /* gray-200 */
