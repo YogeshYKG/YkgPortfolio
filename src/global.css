@@ -1,0 +1,30 @@
+.reveal-up {
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.lineSeparator {
+  height: 1px;
+  background-color: #e5e7eb; /* gray-200 */
+  margin-bottom: -2rem;
+
+  /* Match container's max-width and center alignment */
+  max-width: 1280px; /* matches xl:max-w-screen-xl */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Match container's horizontal padding */
+  padding-left: 1rem;   /* px-4 */
+  padding-right: 1rem;
+
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;   /* sm:px-6 */
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 3rem;     /* lg:px-12 */
+    padding-right: 3rem;
+  }
+}
