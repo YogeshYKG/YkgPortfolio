@@ -106,6 +106,7 @@ const referals = [
   },
 ]
 
+
 const Referals = () => {
   return (
     <>
