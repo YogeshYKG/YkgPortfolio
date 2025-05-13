@@ -24,6 +24,7 @@ const aboutItems = [
 ];
 
 const About = () => {
+  
   return (
     <section id="about" className="section">
       <div className="container mb-9 mt-9">

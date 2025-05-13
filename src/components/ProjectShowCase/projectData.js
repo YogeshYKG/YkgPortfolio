@@ -108,12 +108,14 @@ const projectData = [
       "Favorites",
       "YouTube Integration",
       "Shimmer Loader",
+      "Interactive StopLight",
       "Audio Slider",
       "Hamburger Menu",
       "Library View",
       "Responsive UI",
     ],
-    thumbnail: "", // Add thumbnail path if available
+    thumbnail: "",
+    thumbVideo: "/Rec/13.05.2025_17.46.51_REC.mp4", // Add thumbnail path if available
     projectLink: "https://github.com/YogeshYKG/my-music-app", // update if different
     Links: {
       LiveUrl: {
@@ -144,6 +146,7 @@ const projectData = [
       "Minimal UI",
     ],
     thumbnail: "", // Add thumbnail path if available
+    thumbVideo: "/Rec/13.05.2025_18.00.06_REC.mp4",
     projectLink: "https://github.com/YogeshYKG/tic-tac-toe", // update if different
     Links: {
       LiveUrl: {
@@ -172,6 +175,7 @@ const projectData = [
       "Mini Tool",
     ],
     thumbnail: "/images/MyAppItem/PasteApp.png",
+    thumbVideo: "/Rec/13.05.2025_18.04.42_REC.mp4",
     projectLink: "#",
     Links: {
       LiveUrl: {
@@ -186,7 +190,7 @@ const projectData = [
   },
   {
     id: 3,
-    title: "Social Media Dashboard",
+    title: "Media Dashboard",
     tilteLabel: "Frontend WebApp",
     iframeUrl: "https://social-media-six-gray.vercel.app/",
     iframeView: "None",

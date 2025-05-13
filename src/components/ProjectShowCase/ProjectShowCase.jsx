@@ -7,11 +7,13 @@ import {
   ExternalLink,
   Github,
   Globe,
+  Image as ImageIcon,
 } from "lucide-react";
 
 const Project_Works = () => {
   const [selectedProject, setSelectedProject] = useState(projectData[0]);
   const [expanded, setExpanded] = useState(true);
+  const [imgError, setImgError] = useState(false);
 
   return (
     <>
@@ -229,12 +231,17 @@ const Project_Works = () => {
                       <source src={project.thumbVideo} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
-                  ) : (
+                  ) : project.thumbnail ? (
                     <img
                       src={project.thumbnail}
                       alt={`${project.title} thumbnail`}
                       className="w-20 h-14 object-cover rounded-md border"
+                      onError={() => setImgError(true)}
                     />
+                  ) : (
+                    <div className="w-20 h-14 flex items-center justify-center rounded-md border bg-muted">
+                      <ImageIcon className="w-6 h-6 text-muted-foreground" />
+                    </div>
                   )}
                   <div>
                     <h3 className="text-sm font-semibold">{project.title}</h3>
