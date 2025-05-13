@@ -1,7 +1,13 @@
 import { useState } from "react";
 import projectData from "./projectData";
 
-import { ChevronUp, ChevronDown, ExternalLink } from "lucide-react";
+import {
+  ChevronUp,
+  ChevronDown,
+  ExternalLink,
+  Github,
+  Globe,
+} from "lucide-react";
 
 const Project_Works = () => {
   const [selectedProject, setSelectedProject] = useState(projectData[0]);
@@ -22,23 +28,26 @@ const Project_Works = () => {
                   {/* Animated Gradient Background */}
                   <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-900 via-purple-800 to-gray-900 opacity-20 blur-xl z-0" />
 
-                  {/* Iframe Container */}
-                  <div
-                    style={{
-                      width: "1440px",
-                      height: "616px",
-                      transform: "scale(0.7)",
-                      marginTop: "-6rem",
-                      marginLeft: "-14rem",
-                    }}
-                    className="relative z-10 mx-auto bg-white shadow-2xl rounded-md overflow-hidden"
-                  >
-                    <iframe
-                      src={selectedProject.iframeUrl}
-                      title={selectedProject.title}
-                      className="w-full h-full"
-                      allowFullScreen
-                    />
+                  {/* Wrapper to prevent horizontal scroll */}
+                  <div className="overflow-x-hidden">
+                    {/* Iframe Container */}
+                    <div
+                      style={{
+                        width: "1440px",
+                        height: "616px",
+                        transform: "scaleY(0.7) scaleX(0.63)",
+                        marginTop: "-6rem",
+                        marginLeft: "-17rem",
+                      }}
+                      className="relative z-10 mx-auto bg-white shadow-2xl rounded-md overflow-hidden"
+                    >
+                      <iframe
+                        src={selectedProject.iframeUrl}
+                        title={selectedProject.title}
+                        className="w-full h-full"
+                        allowFullScreen
+                      />
+                    </div>
                   </div>
                 </div>
               ) : (
@@ -92,15 +101,51 @@ const Project_Works = () => {
                         </span>
                       ))}
                     </div>
-                    <div className="flex justify-center pb-4 mb-4">
-                      <a
-                        href={selectedProject.projectLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition"
-                      >
-                        Visit Project <ExternalLink size={16} />
-                      </a>
+                    {selectedProject.workedtags?.length > 0 && (
+                      <div className="flex flex-wrap justify-center gap-2 mb-4">
+                        {selectedProject.workedtags.map((workedtag, idx) => (
+                          <span
+                            key={idx}
+                            className="text-xs bg-white/10 text-white px-2 py-1 rounded-full border border-white/20"
+                          >
+                            {workedtag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap justify-center gap-3 pb-4 mb-4">
+                      {Object.entries(selectedProject.Links || {}).map(
+                        ([key, { url, icon }]) => {
+                          if (!url) return null;
+
+                          let displayName = key.replace(/_/g, " ");
+
+                          // Choose standard icon if available
+                          let IconComponent = null;
+                          if (key === "LiveUrl") IconComponent = ExternalLink;
+                          else if (key === "GitHub_Repo")
+                            IconComponent = Github;
+                          else IconComponent = Globe; // fallback icon
+
+                          return (
+                            <a
+                              key={key}
+                              href={url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition"
+                            >
+                              {IconComponent ? (
+                                <IconComponent size={16} />
+                              ) : icon ? (
+                                <img src={icon} alt={key} className="w-4 h-4" />
+                              ) : null}
+                              {displayName}
+                            </a>
+                          );
+                        }
+                      )}
                     </div>
                   </div>
                 )}
@@ -122,13 +167,29 @@ const Project_Works = () => {
                     setExpanded(true);
                   }}
                 >
-                  <img
-                    src={project.thumbnail}
-                    alt={`${project.title} thumbnail`}
-                    className="w-20 h-14 object-cover rounded-md border"
-                  />
+                  {project.thumbVideo ? (
+                    <video
+                      preload="auto"
+                      width="100%"
+                      muted
+                      autoPlay
+                      loop
+                      playsInline
+                      className="w-20 h-14 object-cover rounded-md border"
+                    >
+                      <source src={project.thumbVideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img
+                      src={project.thumbnail}
+                      alt={`${project.title} thumbnail`}
+                      className="w-20 h-14 object-cover rounded-md border"
+                    />
+                  )}
                   <div>
                     <h3 className="text-sm font-semibold">{project.title}</h3>
+
                     <p
                       className={`text-xs ${
                         selectedProject.id === project.id
@@ -136,12 +197,12 @@ const Project_Works = () => {
                           : "text-gray-500"
                       }`}
                     >
-                      {project.tags.slice(0, 2).join(", ")}
+                      {project.tilteLabel}
                     </p>
                   </div>
                 </div>
               ))}
-            </div>  
+            </div>
           </div>
         </div>
       </section>
