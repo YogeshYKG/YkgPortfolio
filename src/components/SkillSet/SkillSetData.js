@@ -20,7 +20,7 @@ const skillCategories = [
       { name: "Angular", proficiency: "high" },
       { name: "CSS", proficiency: "high" },
       { name: "HTML", proficiency: "high" },
-      { name: "Design Systems", proficiency: "high" },
+      { name: "System Design", proficiency: "high" },
       { name: "D3.js", proficiency: "medium" },
       { name: "SVG", proficiency: "high" },
       { name: "Figma", proficiency: "medium" },

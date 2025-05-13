@@ -9,84 +9,102 @@ import ReferalCard from "./ReferalCard";
 
 const referals = [
   {
+    "referalContent": "Yogesh excelled at VDB for 2.5 years, growing from intern to frontend developer. As his mentor, I saw him tackle complex features and squash bugs efficiently, ensuring robust solutions with minimal UI focus.",
+    "name": "Navdeep Kumar",
+    "position": "Sr. Tech Lead",
+    "imgSrc": "/images/navdeep.jpeg",
+    "company": "VDB",
+    "companyLink": "https://vdbapp.com/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/navdeep-dhull/",
+      "github": ""
+    }
+  },
+  {
+    "referalContent": "Yogesh was a rockstar at VDB for 2.5 years! He crushed feature development and bug fixes, always finding smart solutions. Less UI, more code—great teammate and friend!",
+    "name": "Nishant Babber",
+    "position": "Sr. Frontend Developer",
+    "imgSrc": "/images/nishant.jpeg",
+    "company": "VDB",
+    "companyLink": "https://vdbapp.com/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/nishantbabber/",
+      "github": ""
+    }
+  },
+  {
+    "referalContent": "Yogesh killed it at VDB for 2.5 years, building features and wiping out bugs like a pro. His problem-solving was on point, with UI taking a backseat. Awesome friend!",
+    "name": "Sambhav Jain",
+    "position": "Full Stack Developer",
+    "imgSrc": "/images/sambhav.jpeg",
+    "company": "VDB",
+    "companyLink": "https://vdbapp.com/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/bewithsambhav/",
+      "github": ""
+    }
+  },
+  {
+    "referalContent": "Yogesh was a blast to work with at VDB for 2.5 years. He nailed feature builds and bug fixes, syncing perfectly with backend. Less UI, all logic—total friend vibes!",
+    "name": "Soumya Jain",
+    "position": "Backend / ROR Developer",
+    "imgSrc": "/images/soumya.jpeg",
+    "company": "VDB",
+    "companyLink": "https://vdbapp.com/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/soumya-jain-1a427915b/",
+      "github": ""
+    }
+  },
+  {
+    "referalContent": "Yogesh’s 2.5 years at VDB, from intern to frontend developer, drove impactful feature development and issue resolution. His problem-solving strengthened system reliability, with minimal UI involvement.",
+    "name": "Amit Matta",
+    "position": "Senior Vice President",
+    "imgSrc": "/images/amit.jpeg",
+    "company": "VDB",
+    "companyLink": "https://vdbapp.com/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/amitmatta/",
+      "github": ""
+    }
+  },
+  {
     referalContent:
-      "Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.",
-    name: "Sophia Ramirez",
-    position: "Frontend Lead",
-    imgSrc: "/images/people-1.jpg",
-    company: "PixelForge",
-    companyLink: "https://pixelforge.dev",
+      "Aditya consistently delivered outstanding UI components and innovative solutions.",
+    name: "Aditya Pratap Singh",
+    position: "Sr. Frontend Developer",
+    imgSrc: "/images/aditya.jpeg",
+    company: "Tech Binary",
+    companyLink: "https://blueberrygroup.com",
     socials: {
-      linkedin: "https://linkedin.com/in/sophia-gummy",
-      github: "https://github.com/gummy-sophia",
+      linkedin: "https://www.linkedin.com/in/aditya-mern-full-stack-developer/",
     },
   },
   {
     referalContent:
-      "Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.",
-    name: "Ethan Caldwell",
-    position: "Full Stack Engineer",
-    imgSrc: "/images/people-2.jpg",
-    company: "NexaWave",
-    companyLink: "https://nexawave.io",
+      "Sahadev brought robust development skills and agility to our tech projects.",
+    name: "Sahadev Roy",
+    position: "Web Developer / .Net Developer",
+    imgSrc: "/images/sahadev.jpeg",
+    company: "Tech Binary",
+    companyLink: "https://blueberrygroup.com",
     socials: {
-      linkedin: "https://linkedin.com/in/ethan-gummy",
-      github: "https://github.com/gummy-ethan",
+      linkedin: "https://www.linkedin.com/in/sahadev-roy-8761a1232/",
     },
   },
   {
     referalContent:
-      "Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.",
-    name: "Liam Bennett",
-    position: "Tech Director",
-    imgSrc: "/images/people-3.jpg",
-    company: "CodeCraft",
-    companyLink: "https://codecraft.dev",
+      "Nitesh ensured quality and performance through effective testing methodologies.",
+    name: "Nitesh Jha",
+    position: "QA",
+    imgSrc: "/images/nitesh.jpeg",
+    company: "Tech Binary",
+    companyLink: "https://blueberrygroup.com",
     socials: {
-      linkedin: "https://linkedin.com/in/liam-gummy",
-      github: "https://github.com/gummy-liam",
+      linkedin: "https://www.linkedin.com/in/nitesh-jha-9b082a1a9/",
     },
   },
-  {
-    referalContent:
-      "Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.",
-    name: "Noah Williams",
-    position: "UI/UX Designer",
-    imgSrc: "/images/people-4.jpg",
-    company: "BrightWeb",
-    companyLink: "https://brightweb.studio",
-    socials: {
-      linkedin: "https://linkedin.com/in/noah-gummy",
-      github: "https://github.com/gummy-noah",
-    },
-  },
-  {
-    referalContent:
-      "Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.",
-    name: "Ava Thompson",
-    position: "Project Manager",
-    imgSrc: "/images/people-5.jpg",
-    company: "TechMosaic",
-    companyLink: "https://techmosaic.ai",
-    socials: {
-      linkedin: "https://linkedin.com/in/ava-gummy",
-      github: "https://github.com/gummy-ava",
-    },
-  },
-  {
-    referalContent:
-      "Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.",
-    name: "Jonathan",
-    position: "CTO",
-    imgSrc: "/images/people-6.jpg",
-    company: "Skyline Digital",
-    companyLink: "https://skylinedigital.dev",
-    socials: {
-      linkedin: "https://linkedin.com/in/jonathan-gummy",
-      github: "https://github.com/gummy-jon",
-    },
-  },
-];
+]
 
 const Referals = () => {
   return (
@@ -98,32 +116,32 @@ const Referals = () => {
             <h2 className="headline-2 mb-8">Referrals</h2>
           </ScrollReveal>
           <ScrollReveal>
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mb-16">
-            {referals.map(
-              (
-                {
-                  referalContent,
-                  name,
-                  imgSrc,
-                  company,
-                  position,
-                  companyLink,
-                  socials,
-                },
-                key
-              ) => (
-                <ReferalCard
-                  name={name}
-                  imgSrc={imgSrc}
-                  company={company}
-                  position={position}
-                  companyLink={companyLink}
-                  content={referalContent}
-                  socials={socials}
-                />
-              )
-            )}
-          </div>
+            <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mb-16">
+              {referals.map(
+                (
+                  {
+                    referalContent,
+                    name,
+                    imgSrc,
+                    company,
+                    position,
+                    companyLink,
+                    socials,
+                  },
+                  key
+                ) => (
+                  <ReferalCard
+                    name={name}
+                    imgSrc={imgSrc}
+                    company={company}
+                    position={position}
+                    companyLink={companyLink}
+                    content={referalContent}
+                    socials={socials}
+                  />
+                )
+              )}
+            </div>
           </ScrollReveal>
         </div>
       </section>

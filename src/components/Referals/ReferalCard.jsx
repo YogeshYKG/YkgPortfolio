@@ -30,20 +30,18 @@ const ReferalCard = ({
     <ScrollReveal>
       <div className="bg-zinc-800 p-5 rounded-xl flex flex-col justify-between">
         {/* Footer Section: Avatar, Name, Company, Socials */}
-        <div className="grid grid-cols-[180px_auto_auto] items-center w-full gap-x-24">
+        <div className="grid grid-cols-[280px_auto_auto] items-center w-full gap-x-16">
           {/* Column 1: Profile Info */}
           <div className="flex items-center gap-3">
-            <figure className="img-box rounded-lg overflow-hidden">
+            <figure className="w-18 h-14 rounded-full overflow-hidden">
               <img
                 src={imgSrc}
                 alt={name}
-                width={44}
-                height={44}
                 loading="lazy"
-                className="img-cover"
+                className="w-full h-full object-cover"
               />
             </figure>
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-grow">
               <p className="font-medium text-white">{name}</p>
               {companyLink ? (
                 <p className="text-xs text-zinc-400 tracking-wide">
