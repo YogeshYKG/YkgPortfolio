@@ -28,15 +28,64 @@ const Project_Works = () => {
                   {/* Animated Gradient Background */}
                   <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-900 via-purple-800 to-gray-900 opacity-20 blur-xl z-0" />
 
-                  {/* Wrapper to prevent horizontal scroll */}
                   <div className="overflow-x-hidden">
-                    {/* Iframe Container */}
                     <div
                       style={{
                         width: "1440px",
                         height: "616px",
                         transform: "scaleY(0.7) scaleX(0.63)",
                         marginTop: "-6rem",
+                        marginLeft: "-17rem",
+                      }}
+                      className="relative z-10 mx-auto bg-white shadow-2xl rounded-md overflow-hidden"
+                    >
+                      <iframe
+                        src={selectedProject.iframeUrl}
+                        title={selectedProject.title}
+                        className="w-full h-full"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : selectedProject.iframeView === "MobileScreen_SE" ? (
+                <div className="relative w-full h-full overflow-auto rounded-lg backdrop-blur-md">
+                  {/* Animated Gradient Background */}
+                  <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-900 via-purple-800 to-gray-900 opacity-20 blur-xl z-0" />
+
+                  <div className="overflow-y-hidden">
+                    <div
+                      style={{
+                        width: "375px",
+                        height: "667px",
+                        transform: "scale(0.7)",
+                        marginTop: "-6rem",
+                      }}
+                      className="relative z-10 mx-auto bg-white shadow-2xl rounded-[2rem] overflow-hidden border-[6px] border-black"
+                    >
+                      <iframe
+                        src={selectedProject.iframeUrl}
+                        title={selectedProject.title}
+                        className="w-full h-full"
+                        style={{ overflowY: "hidden" }} // Prevent scrolling inside iframe
+                        scrolling="no"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : selectedProject.iframeView === "MediumLargeScreen" ? (
+                <div className="relative w-full h-full overflow-auto rounded-lg backdrop-blur-md">
+                  {/* Animated Gradient Background */}
+                  <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-900 via-purple-800 to-gray-900 opacity-20 blur-xl z-0" />
+
+                  <div className="overflow-x-hidden">
+                    <div
+                      style={{
+                        width: "1440px",
+                        height: "680px",
+                        transform: "scaleY(0.7) scaleX(0.63)",
+                        marginTop: "-7rem",
                         marginLeft: "-17rem",
                       }}
                       className="relative z-10 mx-auto bg-white shadow-2xl rounded-md overflow-hidden"

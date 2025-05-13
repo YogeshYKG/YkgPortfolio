@@ -5,11 +5,27 @@ const projectData = [
     tilteLabel: "Full-Stack WebApp",
     iframeUrl: "https://vdbapp.com/marketplace/",
     iframeView: "None",
-    description: "Jewelry Tech. Partner, Buy, sell, and advertise on the jewelry industry’s largest and most powerful B2B marketplace",
-    tags: ["Angular", "TypeScript", "SPA", "Ring Configurator", "3D Configurator", "Iframe Intergration"],
-    workedtags: ["Dynamic Filter's", "Search Enhancement", "3D Configurator Enhancement", "Dynamic SignUp"],
+    description:
+      "Jewelry Tech. Partner, Buy, sell, and advertise on the jewelry industry’s largest and most powerful B2B marketplace",
+    tags: [
+      "Angular",
+      "TypeScript",
+      "Single Page Application (SPA)",
+      "3D Ring Configurator",
+      "Jewelry Marketplace",
+      "iFrame Integration",
+      "Dynamic Filtering",
+    ],
+    workedtags: [
+      "Advanced Search Logic",
+      "Dynamic Filters",
+      "3D Configurator Optimization",
+      "Custom Signup Workflow",
+      "Performance Enhancements",
+    ],
     thumbnail: "/images/Works/VDB.gif",
-    thumbVideo: "https://ecdn.speedsize.com/778525a6-77ac-48d2-a2c7-14c32964a659/vdbapp.com/wp-content/uploads/2024/05/VDB-Marketplace.mp4",
+    thumbVideo:
+      "https://ecdn.speedsize.com/778525a6-77ac-48d2-a2c7-14c32964a659/vdbapp.com/wp-content/uploads/2024/05/VDB-Marketplace.mp4",
     Links: {
       LiveUrl: {
         url: "https://vdbapp.com/",
@@ -22,7 +38,7 @@ const projectData = [
       GNDiamonds_Client: {
         url: "https://www.gndiamond.com/webapp/search/new",
         icon: "",
-      }
+      },
     },
   },
   {
@@ -32,9 +48,21 @@ const projectData = [
     iframeUrl: "https://testingfrontend.roadsterbikes.com/",
     iframeView: "LargeScreen",
     description: "OnBoarding Bajaj & Davido Bikes for Roadster Landing Site",
-    tags: ["React", "JavaScript", "Bajaj OnBoarding", "Dealer Connectivitiy", "Admin Panel"],
-    workedtags: ["Complete Solo Project"],
-    thumbnail: "https://testingfrontend.roadsterbikes.com/assets/about-banner.jpg",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Bike Onboarding",
+      "Dealer Portal",
+      "Dynamic PDP with Variants",
+      "Admin Dashboard",
+    ],
+    workedtags: [
+      "Full-Stack Development",
+      "Solo Project",
+      "Client Collaboration",
+    ],
+    thumbnail:
+      "https://testingfrontend.roadsterbikes.com/assets/about-banner.jpg",
     Links: {
       LiveUrl: {
         url: "https://testingfrontend.roadsterbikes.com/",
@@ -44,12 +72,19 @@ const projectData = [
   },
   {
     id: 2,
-    title: "NIC Diner Web",
+    title: "NIC Diner WebApp",
     tilteLabel: "Full-Stack WebApp",
     iframeUrl: "/images/Works/NIC.gif",
-    iframeView: "LargeScreen",
+    iframeView: "None",
     description: "Full-stack restaurant web app...",
-    tags: ["PHP", "MySQL", "Bootstrap"],
+    tags: [
+      "Landing Page",
+      "Inventory Management",
+      "Payment Integration",
+      "Ticketing System",
+      "Customer Support",
+    ],
+    workedtags: ["PHP", "MySQL", "HTML", "CSS", "Full-Stack Architecture"],
     thumbnail: "/images/Works/NIC.gif",
     Links: {
       GitHub_Repo: {
@@ -59,13 +94,111 @@ const projectData = [
     },
   },
   {
+    id: 11,
+    title: "MusicApp",
+    tilteLabel: "Full-Stack WebApp",
+    iframeUrl: "https://my-music-app-lac.vercel.app/",
+    iframeView: "MediumLargeScreen",
+    description:
+      "A responsive music streaming interface with loop modes, shuffle, and personalized favorites—designed for smooth playback control and immersive browsing.",
+    tags: [
+      "Music Player",
+      "Loop Modes",
+      "Shuffle",
+      "Favorites",
+      "YouTube Integration",
+      "Shimmer Loader",
+      "Audio Slider",
+      "Hamburger Menu",
+      "Library View",
+      "Responsive UI",
+    ],
+    thumbnail: "", // Add thumbnail path if available
+    projectLink: "https://github.com/YogeshYKG/my-music-app", // update if different
+    Links: {
+      LiveUrl: {
+        url: "https://my-music-app-lac.vercel.app/",
+        icon: "",
+      },
+      GitHub_Repo: {
+        url: "https://github.com/YogeshYKG/my-music-app", // update if different
+        icon: "",
+      },
+    },
+  },
+  {
+    id: 12,
+    title: "Tic Tac Toe",
+    tilteLabel: "Game WebApp",
+    iframeUrl: "https://tic-tac-toe-pi-sage-98.vercel.app/",
+    iframeView: "MobileScreen_SE",
+    description:
+      "Minimalist Tic Tac Toe game with solo mode against AI, multiplayer via sockets, and dynamic win animations with theme toggling.",
+    tags: [
+      "Tic Tac Toe",
+      "Game App",
+      "AI Opponent",
+      "Multiplayer (Socket.io)",
+      "Theme Toggle",
+      "Win Animation",
+      "Minimal UI",
+    ],
+    thumbnail: "", // Add thumbnail path if available
+    projectLink: "https://github.com/YogeshYKG/tic-tac-toe", // update if different
+    Links: {
+      LiveUrl: {
+        url: "https://tic-tac-toe-pi-sage-98.vercel.app/",
+        icon: "",
+      },
+      GitHub_Repo: {
+        url: "https://github.com/YogeshYKG/tic-tac-toe", // update if different
+        icon: "",
+      },
+    },
+  },
+
+  {
+    id: 10,
+    title: "PasteApp",
+    tilteLabel: "Full-Stack WebApp",
+    iframeUrl: "https://paste-app-gilt-two.vercel.app",
+    iframeView: "None",
+    description: "Create, save, and manage sharable text snippets with ease.",
+    tags: [
+      "Text Snippet Manager",
+      "Clipboard Utility",
+      "Content Sharing",
+      "Note Storage",
+      "Mini Tool",
+    ],
+    thumbnail: "/images/MyAppItem/PasteApp.png",
+    projectLink: "#",
+    Links: {
+      LiveUrl: {
+        url: "https://paste-app-gilt-two.vercel.app",
+        icon: "",
+      },
+      GitHub_Repo: {
+        url: "https://github.com/YogeshYKG/NIC-Intern-Work",
+        icon: "",
+      },
+    },
+  },
+  {
     id: 3,
     title: "Social Media Dashboard",
-    tilteLabel: "Full-Stack WebApp",
+    tilteLabel: "Frontend WebApp",
     iframeUrl: "https://social-media-six-gray.vercel.app/",
     iframeView: "None",
-    description: "A React JS social media dashboard application with user interaction features",
-    tags: ["React", "JavaScript", "Social Media", "Dashboard", "User Interface"],
+    description:
+      "Minimal social media interface for creating and viewing posts with dynamic routing.",
+    tags: [
+      "Post Feed",
+      "Create Post",
+      "Variant Routing",
+      "React",
+      "Frontend UI",
+    ],
     thumbnail: "", // Add a path if available
     projectLink: "https://github.com/YogeshYKG/social-media",
     Links: {
@@ -79,14 +212,23 @@ const projectData = [
       },
     },
   },
+
   {
     id: 4,
     title: "WeatherApp",
-    tilteLabel: "Full-Stack WebApp",
+    tilteLabel: "Frontend WebApp",
     iframeUrl: "https://weather-app-ruddy-two-48.vercel.app/",
-    iframeView: "None",
-    description: "A Vite React JS application that fetches and displays real-time weather data using the OpenWeatherMap API",
-    tags: ["Vite", "React", "JavaScript", "WeatherApp", "OpenWeatherMap API", "API Integration", "Real-time Data"],
+    iframeView: "MobileScreen_SE",
+    description:
+      "Delivers accurate, real-time weather forecasts in a clean mobile-friendly interface.",
+    tags: [
+      "Weather Forecast",
+      "Real-Time Updates",
+      "Responsive Design",
+      "OpenWeatherMap",
+      "Minimal UI",
+      "User-Friendly",
+    ],
     thumbnail: "/images/MyAppItem/WeatherApp.png",
     projectLink: "https://github.com/YogeshYKG/WeatherApp",
     Links: {
@@ -100,14 +242,24 @@ const projectData = [
       },
     },
   },
+
   {
     id: 5,
-    title: "Random Quote Generator",
-    tilteLabel: "Full-Stack WebApp",
+    title: "Quote Generator",
+    tilteLabel: "Frontend WebApp",
     iframeUrl: "https://quote-generator-ecru-xi.vercel.app/",
     iframeView: "None",
-    description: "A Vite React JS application that fetches random quotes via API and displays them with a typewriter animation effect",
-    tags: ["Typewriter Effect", "Random Quote", "React", "API Fetch", "Tailwind CSS", "JavaScript", "Quote Generator"],
+    description:
+      "Generates and displays inspiring quotes with a typewriter animation for a minimal, engaging experience.",
+    tags: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "REST API Integration",
+      "Tailwind CSS",
+      "Typewriter Animation",
+      "Quote Display App",
+    ],
     thumbnail: "/images/MyAppItem/quote-generator.png",
     projectLink: "#",
     Links: {
@@ -122,55 +274,19 @@ const projectData = [
     },
   },
   {
-    id: 6,
-    title: "Food Ordering App",
-    tilteLabel: "Full-Stack WebApp",
-    iframeUrl: "https://react-food-app-pz1u.vercel.app/",
-    iframeView: "None",
-    description: "A React-based food ordering application with menu display and ordering functionality",
-    tags: ["React", "JavaScript", "Food Ordering", "E-commerce", "UI/UX"],
-    thumbnail: "", // Add a path if available
-    projectLink: "https://github.com/YogeshYKG/React-Food-App",
-    Links: {
-      LiveUrl: {
-        url: "https://react-food-app-pz1u.vercel.app/",
-        icon: "",
-      },
-      GitHub_Repo: {
-        url: "https://github.com/YogeshYKG/React-Food-App",
-        icon: "",
-      },
-    },
-  },
-  {
-    id: 7,
-    title: "Dynamic Clock",
-    tilteLabel: "Full-Stack WebApp",
-    iframeUrl: "https://react-dynamic-clock.vercel.app/",
-    iframeView: "None",
-    description: "A React JS application displaying a real-time dynamic clock",
-    tags: ["React", "JavaScript", "Dynamic Clock", "Real-time", "Time Display"],
-    thumbnail: "", // Add a path if available
-    projectLink: "https://github.com/YogeshYKG/React-dynamic-clock",
-    Links: {
-      LiveUrl: {
-        url: "https://react-dynamic-clock.vercel.app/",
-        icon: "",
-      },
-      GitHub_Repo: {
-        url: "https://github.com/YogeshYKG/React-dynamic-clock",
-        icon: "",
-      },
-    },
-  },
-  {
     id: 8,
     title: "StopWatch",
-    tilteLabel: "Full-Stack WebApp",
+    tilteLabel: "Frontend MiniApp",
     iframeUrl: "https://stopwatch-lac-nu.vercel.app/",
     iframeView: "None",
-    description: "A Vite React JS application featuring a stopwatch with start, stop, and reset functionalities",
-    tags: ["Vite", "React", "JavaScript", "Tailwind CSS", "StopWatch", "Timer"],
+    description:
+      "A minimal stopwatch with intuitive start, stop, and reset controls for quick time tracking.",
+    tags: [
+      "Time Tracker",
+      "Minimal UI",
+      "Stopwatch Functionality",
+      "Start/Stop/Reset",
+    ],
     thumbnail: "/images/MyAppItem/StopWatch.png",
     projectLink: "#",
     Links: {
@@ -185,13 +301,48 @@ const projectData = [
     },
   },
   {
+    id: 7,
+    title: "Dynamic Clock",
+    tilteLabel: "Frontend MiniApp",
+    iframeUrl: "https://react-dynamic-clock.vercel.app/",
+    iframeView: "None",
+    description:
+      "Displays the current time in real-time with smooth dynamic updates.",
+    tags: [
+      "Real-time Clock",
+      "Live Time Display",
+      "UI Element",
+      "Minimal App",
+      "Frontend Showcase",
+    ],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/React-dynamic-clock",
+    Links: {
+      LiveUrl: {
+        url: "https://react-dynamic-clock.vercel.app/",
+        icon: "",
+      },
+      GitHub_Repo: {
+        url: "https://github.com/YogeshYKG/React-dynamic-clock",
+        icon: "",
+      },
+    },
+  },
+  {
     id: 9,
     title: "Calculator",
-    tilteLabel: "Full-Stack WebApp",
+    tilteLabel: "Frontend MiniApp",
     iframeUrl: "https://react-calculator-app-six.vercel.app/",
-    iframeView: "None",
-    description: "A React JS calculator application with basic arithmetic operations",
-    tags: ["React", "JavaScript", "Calculator", "Math Operations", "Functional Components"],
+    iframeView: "MobileScreen_SE",
+    description:
+      "Performs basic arithmetic operations through a clean and responsive interface.",
+    tags: [
+      "Basic Calculator",
+      "Arithmetic Operations",
+      "Responsive UI",
+      "Frontend Tool",
+      "Mini Utility App",
+    ],
     thumbnail: "", // Add a path if available
     projectLink: "https://github.com/YogeshYKG/React-Calculator-App",
     Links: {
@@ -206,27 +357,33 @@ const projectData = [
     },
   },
   {
-    id: 10,
-    title: "PasteApp",
-    tilteLabel: "Full-Stack WebApp",
-    iframeUrl: "https://paste-app-gilt-two.vercel.app",
-    iframeView: "None",
-    description: "A Vite React JS application for creating and managing text snippets",
-    tags: ["Vite", "React", "JavaScript", "PasteApp", "Text Management"],
-    thumbnail: "/images/MyAppItem/PasteApp.png",
-    projectLink: "#",
+    id: 6,
+    title: "Food Ordering App",
+    tilteLabel: "Frontend MiniApp",
+    iframeUrl: "https://react-food-app-pz1u.vercel.app/",
+    iframeView: "MobileScreen_SE",
+    description:
+      "Simple food ordering interface to browse menu items and place orders in a mobile layout.",
+    tags: [
+      "Menu Display",
+      "Order Flow",
+      "E-commerce UI",
+      "React",
+      "Mobile-first",
+    ],
+    thumbnail: "", // Add a path if available
+    projectLink: "https://github.com/YogeshYKG/React-Food-App",
     Links: {
       LiveUrl: {
-        url: "https://paste-app-gilt-two.vercel.app",
+        url: "https://react-food-app-pz1u.vercel.app/",
         icon: "",
       },
       GitHub_Repo: {
-        url: "https://github.com/YogeshYKG/NIC-Intern-Work",
+        url: "https://github.com/YogeshYKG/React-Food-App",
         icon: "",
       },
     },
   },
 ];
-
 
 export default projectData;
