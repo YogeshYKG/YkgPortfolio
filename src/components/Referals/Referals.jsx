@@ -75,7 +75,7 @@ const referals = [
     position: "Sr. Frontend Developer",
     imgSrc: "/images/aditya.jpeg",
     company: "Tech Binary",
-    companyLink: "https://blueberrygroup.com",
+    companyLink: "https://www.blueberry-travel.com/",
     socials: {
       linkedin: "https://www.linkedin.com/in/aditya-mern-full-stack-developer/",
     },
@@ -87,7 +87,7 @@ const referals = [
     position: "Web Developer / .Net Developer",
     imgSrc: "/images/sahadev.jpeg",
     company: "Tech Binary",
-    companyLink: "https://blueberrygroup.com",
+    companyLink: "https://www.blueberry-travel.com/",
     socials: {
       linkedin: "https://www.linkedin.com/in/sahadev-roy-8761a1232/",
     },
@@ -99,7 +99,7 @@ const referals = [
     position: "QA",
     imgSrc: "/images/nitesh.jpeg",
     company: "Tech Binary",
-    companyLink: "https://blueberrygroup.com",
+    companyLink: "https://www.blueberry-travel.com/",
     socials: {
       linkedin: "https://www.linkedin.com/in/nitesh-jha-9b082a1a9/",
     },
