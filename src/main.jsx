@@ -13,12 +13,9 @@ import VersionControl from './versioncontrol.jsx'
 import './global.css'
 import './index.css'
 import 'lenis/dist/lenis.css'
-import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter basename="/YkgPortfolio">
-      <VersionControl />
-    </BrowserRouter>
+  <StrictMode basename="/Portfolio">
+    <VersionControl />
   </StrictMode>
 )
