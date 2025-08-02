@@ -186,6 +186,43 @@ const projectData = [
       },
     },
   },
+
+  {
+    id: 17,
+    title: "RayCore",
+    tilteLabel: "Full-Stack WebApp",
+    iframeUrl: "https://raycore.vercel.app/",
+    iframeView: "LaptopView",
+    description:
+      "All-in-one solar solution for residential and commercial users, featuring a smooth, UX-optimized homepage and a multi-stage planner for high-converting leads.",
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MUI",
+      "Responsive Web",
+      "Multi-Stage Planner",
+      "Custom PDF Brochure",
+      "Dynamic Routing",
+    ],
+    workedtags: [
+      "Full-Stack Development",
+      "Solo Project",
+      "Lead Capture Workflow",
+      "Component Architecture",
+      "UX-Focused Design",
+    ],
+    thumbnail:
+      "https://blueberrydatastorage.blob.core.windows.net/websitesdata/BBT/BBT%20All%20Pages%20Banners/RayCore.webp", // Replace if needed
+    Links: {
+      LiveUrl: {
+        url: "https://raycore.vercel.app/",
+        icon: "",
+      },
+    },
+  },
+
   {
     id: 5,
     title: "NIC Diner WebApp",
@@ -450,7 +487,7 @@ const projectData = [
   //     },
   //   },
   // },
- 
+
   // {
   //   id: 15,
   //   title: "Calculator",
