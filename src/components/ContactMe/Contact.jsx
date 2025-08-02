@@ -92,7 +92,7 @@ const Contact = () => {
     <>
       <ScrollReveal>
         <div className="lineSeparator" />
-        <section id="contact" className="section ">
+        <section id="contact" className="section mt-20">
           <div className="container pb-32 lg:grid lg:grid-cols-2 lg:items-stretch ">
             <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
               <ScrollReveal>
@@ -128,70 +128,72 @@ const Contact = () => {
               method="POST"
               className="xl:pl-10 2xl:pl-20"
             >
-              <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
-                <div className="mb-4 ">
+              <div className="border border-zinc-300/10 rounded-xl p-6 shadow-sm bg-zinc-800/25">
+                <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
+                  <div className="mb-4 ">
+                    <ScrollReveal>
+                      <label htmlFor="name" className="label">
+                        Name
+                      </label>
+                    </ScrollReveal>
+                    <ScrollReveal>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autoComplete="name"
+                        required
+                        placeholder="Yogesh Gupta"
+                        className="text-field"
+                      />
+                    </ScrollReveal>
+                  </div>
+
+                  <div className="mb-4 ">
+                    <ScrollReveal>
+                      <label htmlFor="email" className="label">
+                        Email
+                      </label>
+                    </ScrollReveal>
+                    <ScrollReveal>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autoComplete="email"
+                        required
+                        placeholder="guptayogesh484.00@gmail.com"
+                        className="text-field"
+                      />
+                    </ScrollReveal>
+                  </div>
+                </div>
+
+                <div className="mb-4">
                   <ScrollReveal>
-                    <label htmlFor="name" className="label">
-                      Name
+                    <label htmlFor="message" className="label">
+                      Message
                     </label>
                   </ScrollReveal>
                   <ScrollReveal>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      autoComplete="name"
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Hi!"
                       required
-                      placeholder="Yogesh Gupta"
-                      className="text-field"
-                    />
+                      className="text-field resize-y min-h-32 max-h-80 "
+                    ></textarea>
                   </ScrollReveal>
                 </div>
-
-                <div className="mb-4 ">
-                  <ScrollReveal>
-                    <label htmlFor="email" className="label">
-                      Email
-                    </label>
-                  </ScrollReveal>
-                  <ScrollReveal>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autoComplete="email"
-                      required
-                      placeholder="guptayogesh484.00@gmail.com"
-                      className="text-field"
-                    />
-                  </ScrollReveal>
-                </div>
-              </div>
-
-              <div className="mb-4">
                 <ScrollReveal>
-                  <label htmlFor="message" className="label">
-                    Message
-                  </label>
-                </ScrollReveal>
-                <ScrollReveal>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Hi!"
-                    required
-                    className="text-field resize-y min-h-32 max-h-80 "
-                  ></textarea>
+                  <button
+                    type="submit"
+                    className="btn btn-primary [&]:max-w-full w-full justify-center"
+                  >
+                    Submit
+                  </button>
                 </ScrollReveal>
               </div>
-              <ScrollReveal>
-                <button
-                  type="submit"
-                  className="btn btn-primary [&]:max-w-full w-full justify-center"
-                >
-                  Submit
-                </button>
-              </ScrollReveal>
             </form>
           </div>
         </section>

@@ -4,9 +4,9 @@
  */
 
 import ScrollReveal from "../ScrollReveal"; // or "../utils/ScrollReveal" if that’s where you placed it
-
 import "../../index.css";
 import "../../global.css";
+import CountUpNumber from "../utils/CountUpNumber";
 
 const aboutItems = [
   {
@@ -14,8 +14,12 @@ const aboutItems = [
     number: 250,
   },
   {
+    label: "Projects",
+    number: 14,
+  },
+  {
     label: "Years of experience",
-    number: 2.5,
+    number: 3.5,
   },
   {
     label: "LeetCode Problems",
@@ -24,7 +28,6 @@ const aboutItems = [
 ];
 
 const About = () => {
-  
   return (
     <section id="about" className="section">
       <div className="container mb-9 mt-9">
@@ -35,8 +38,8 @@ const About = () => {
               <div className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
                 <h4 className="typewriter">Hi, I’m Yogesh!</h4>
                 <h5>
-                  I’m a web developer with 2.5+ years of experience in building
-                  and optimizing dynamic web applications. Skilled in Angular,
+                  I’m a web developer with 3.5 years of experience in building and
+                  optimizing dynamic web applications. Skilled in Angular,
                   TypeScript, and AWS.
                 </h5>
                 <h5>
@@ -55,7 +58,7 @@ const About = () => {
                     <div>
                       <div className="flex items-center md:mb-2">
                         <span className="text-2xl font-semibold md:text-4xl">
-                          {number}
+                          <CountUpNumber target={number} />
                         </span>
                         <span className="text-sky-400 font-semibold md:text-3xl">
                           +

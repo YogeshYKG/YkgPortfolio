@@ -28,7 +28,7 @@ const Hero = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   return (
     <section id="home" className="pt-28 lg:pt-16">
       <div className="cointainer py-12 items-center lg:grid lg:grid-cols-2 lg:gap-10">
@@ -56,7 +56,7 @@ const Hero = () => {
           </h2>
           <div className="flex items-center gap-3">
             <a
-              href="https://raw.githubusercontent.com/YogeshYKG/YogeshYKG/main/Yogesh_CV.pdf"
+              href="https://drive.google.com/uc?export=download&id=1dMBMdGGHcFmsBRWllcKM89h1TQFliz-8"
               download="Yogesh_CV.pdf"
             >
               <ButtonPrimary label="Download CV" icon="download" />
